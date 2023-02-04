@@ -1,0 +1,14 @@
+.l_input {
+  @apply mt-4 border w-full border-gray-200 rounded-sm py-1 px-2 outline-none  
+        placeholder:text-xs focus:ring-2 ring-offset-2 ring-violet-600 duration-300 focus:border-white;
+}
+.l_error{
+  @apply rounded-md bg-pink-500 text-white text-xs px-2 py-1 mt-2;
+}
+
+.l_button{
+  @apply bg-violet-700 text-white  py-2 px-4 rounded-md mt-6 hover:bg-violet-500 duration-300;
+  &.l_danger{
+    @apply bg-fuchsia-700 hover:bg-fuchsia-500;
+  }
+}
