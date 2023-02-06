@@ -1,0 +1,14 @@
+import wall from "../canvas/wall";
+import { image } from "../service/image";
+import modelAbstract from "./modelAbstarct";
+
+export default class  extends modelAbstract implements IModel{
+  public canvas: ICanvas = wall
+  name: string = 'wall'
+  image(): HTMLImageElement {
+    return image.get('wall')!
+  }
+  render(): void {
+    super.draw()
+  }
+}
